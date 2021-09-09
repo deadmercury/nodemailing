@@ -1,16 +1,50 @@
-html,
-body {
+* {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
   box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+form {
+  margin: 2rem;
+  box-shadow: 0 0 20px -10px black;
+  display: grid;
+  grid-auto-flow: row;
+  padding: 1.5rem 1rem;
+  row-gap: 1rem;
+}
+
+label {
+  display: grid;
+  row-gap: 0.2rem;
+  font-size: 1.9rem;
+}
+
+label.pass {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+input {
+  font-family: sans-serif;
+}
+
+input,
+textarea {
+  font-size: 1.1rem;
+  padding: 0.2em 0.5em;
+}
+
+input.pass {
+  font-size: 1rem;
+}
+
+input[type='submit'] {
+  font-size: 1.5rem;
+  justify-self: center;
+  padding: 0.1em 0.3em;
+}
+
+div[role='alert'] {
+  font-size: 0.9rem;
 }
