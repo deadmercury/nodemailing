@@ -28,7 +28,6 @@ export default function Hello() {
 
     postResponse = await postResponse.json();
     setStatus(postResponse.message);
-    if (postResponse.console) console.log(postResponse.console);
   };
   return (
     <>

@@ -35,11 +35,9 @@ export default function handler(req, res) {
     if (err) {
       console.log(err);
       res.status(502).json({ message: 'Something Went Wrong!' });
+    } else {
+      console.log('Email sent: ' + info.response);
+      res.status(200).json({ message: 'Message Delivered Successfully!' });
     }
-    console.log('Email sent: ' + info.response);
-    res.status(200).json({
-      message: 'Message Delivered Successfully!',
-      console: info.response,
-    });
   });
 }
