@@ -34,7 +34,7 @@ export default function handler(req, res) {
   transporter.sendMail(mailOptions, (err, info) => {
     if (err) {
       console.log(err);
-      res.status(502).json({ message: 'Something Went Wrong!', console: err });
+      res.status(502).json({ message: 'Something Went Wrong!' });
     }
     console.log('Email sent: ' + info.response);
     res.status(200).json({
